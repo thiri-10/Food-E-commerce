@@ -1,22 +1,23 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="container mx-auto mt-20 flex">
+<div class="container mx-auto mt-20 pt-10 flex min-h-screen">
     <div class="w-1/4 mr-10">
         <!-- User Profile Section -->
         <div class="bg-white rounded-lg shadow-md p-6 mb-6">
-            <div class="w-20 h-20 rounded-full bg-gray-300 flex items-center justify-center mb-4 mx-auto">
+            <div class="w-20 h-20 rounded-full bg-yellow-400 flex items-center justify-center mb-4 mx-auto">
                 <span class="text-gray-700 font-semibold text-xl">T</span> 
             </div>
             <h2 class="flex justify-center text-lg text-gray-800 mb-4">Thiha</h2>
            
             <!-- Order History Section -->
             <div class="mb-4">
-                <a href="#" class="text-lg font-semibold text-gray-700 mb-2">Order History</a>
+                <a href="#" class="text-lg font-semibold  text-gray-700 hover:text-yellow-500 mb-2">Order History</a>
+                
             </div>
             <!-- Settings Section -->
             <div>
-                <a href="{{route('profile')}}" class="text-lg font-semibold text-gray-700 mb-2">Settings</a>
+                <a href="{{route('profile')}}" class="text-lg font-semibold text-gray-700 hover:text-yellow-500 mb-2">Settings</a>
                
             </div>
         </div>
